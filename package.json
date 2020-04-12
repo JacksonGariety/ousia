@@ -1,0 +1,37 @@
+{
+  "name": "ousia",
+  "version": "1.0.0",
+  "description": "The interactive encyclopedia.",
+  "scripts": {
+    "postinstall": "spago install",
+    "clean": "rm -rf node_modules output .spago dist/* *.lock",
+    "build": "NODE_ENV=production webpack",
+    "start": "NODE_ENV=development webpack-dev-server --progress --inline",
+    "test": "spago test"
+  },
+  "repository": "git+https://github.com/thomashoneyman/purescript-halogen-realworld.git",
+  "keywords": [
+    "purescript",
+    "halogen",
+    "realworld"
+  ],
+  "author": "Coleman Gariety",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacksonGariety/ousia"
+  },
+  "homepage": "https://github.com/JacksonGariety/ousia#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.2.0",
+    "parcel-bundler": "^1.12.4",
+    "purescript": "^0.13.6",
+    "purescript-psa": "^0.7.3",
+    "purs-loader": "^3.7.1",
+    "spago": "^0.13.1",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "main": "dist/app.js"
+}
